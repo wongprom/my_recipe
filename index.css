@@ -75,7 +75,7 @@ section.instructions {
   flex: 1;
 }
 
-.ingredients {
+section.ingredients {
   padding-right: 50px;
 }
 
