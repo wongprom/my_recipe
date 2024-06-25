@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.quattrocento-sans-regular {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quattrocento-sans-bold {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quattrocento-sans-regular-italic {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quattrocento-sans-bold-italic {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+figure {
+  all: unset;
+}
+
 body {
-  background-color: hotpink;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #5a5555;
+  max-width: 1100px;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex: 1;
 }
