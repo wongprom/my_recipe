@@ -50,7 +50,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
   padding: 20px;
 }
 
@@ -76,4 +78,11 @@ section.instructions {
 
 figure.ingredients {
   display: none;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid gray;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
