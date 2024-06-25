@@ -52,8 +52,7 @@ body {
   background-color: #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-
-  padding: 20px;
+  padding: 50px;
 }
 
 header {
@@ -74,6 +73,18 @@ main {
 section.ingredients,
 section.instructions {
   flex: 1;
+}
+
+.ingredients {
+  padding-right: 50px;
+}
+.ingredients > ul > li {
+  list-style: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #b1afaf;
+}
+.ingredients > ul > li:last-child {
+  border-bottom: none;
 }
 
 figure.ingredients {
