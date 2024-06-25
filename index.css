@@ -78,6 +78,7 @@ section.instructions {
 .ingredients {
   padding-right: 50px;
 }
+
 .ingredients > ul > li {
   list-style: none;
   padding: 5px 0;
@@ -90,9 +91,20 @@ section.instructions {
 figure.ingredients {
   max-width: 110px;
 }
+
 .ingredients > figcaption {
   display: none;
 }
+
+.instructions > ol > li {
+  padding: 10px 0;
+}
+
+.instructions > ol > li::marker {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
 .ingredients > img {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -109,11 +121,13 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 .card {
   display: flex;
   background-color: #f8f4f2;
   border-radius: 20px;
 }
+
 address {
   padding: 10px;
   padding-right: 70px;
