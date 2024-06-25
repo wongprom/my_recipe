@@ -77,7 +77,15 @@ section.instructions {
 }
 
 figure.ingredients {
+  /* display: none; */
+  max-width: 110px;
+}
+.ingredients > figcaption {
   display: none;
+}
+.ingredients > img {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 footer {
@@ -85,4 +93,21 @@ footer {
   border-top: 1px solid gray;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: flex;
+  background-color: #f8f4f2;
+  border-radius: 20px;
+  /* max-width: 300px; */
+}
+.contact-info {
+  padding: 10px;
+}
+
+.contact-info.a:last-of-type {
+  margin-top: auto;
 }
