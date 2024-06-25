@@ -77,7 +77,6 @@ section.instructions {
 }
 
 figure.ingredients {
-  /* display: none; */
   max-width: 110px;
 }
 .ingredients > figcaption {
@@ -86,6 +85,7 @@ figure.ingredients {
 .ingredients > img {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  min-height: 100%;
 }
 
 footer {
@@ -102,12 +102,26 @@ footer {
   display: flex;
   background-color: #f8f4f2;
   border-radius: 20px;
-  /* max-width: 300px; */
 }
-.contact-info {
+address {
   padding: 10px;
+  padding-right: 70px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-info.a:last-of-type {
+address > p {
+  margin: unset;
+  margin-bottom: 5px;
+}
+
+address p:last-child {
   margin-top: auto;
+}
+
+address p a {
+  text-decoration: none;
+  color: #4e9a5d;
+  cursor: pointer;
 }
