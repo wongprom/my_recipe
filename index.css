@@ -64,3 +64,16 @@ header {
   display: flex;
   flex: 1;
 }
+
+main {
+  display: flex;
+  padding-top: 20px;
+}
+section.ingredients,
+section.instructions {
+  flex: 1;
+}
+
+figure.ingredients {
+  display: none;
+}
