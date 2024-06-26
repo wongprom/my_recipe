@@ -150,3 +150,51 @@ address p a {
   color: #4e9a5d;
   cursor: pointer;
 }
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c3bebe;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 20;
+  font-size: 30;
+  color: #cdf1ea;
+}
+
+.likes-wrapper > div {
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #cdf1ea;
+}
+
+.number-likes {
+  color: #1e726a;
+  padding: 5px;
+  margin: unset;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 13px;
+  background-color: #e76f6f;
+  color: #fff;
+}
+
+button.save span {
+  color: white;
+  padding-right: 5px;
+}
