@@ -192,6 +192,10 @@ address p a {
   padding: 13px;
   background-color: #e76f6f;
   color: #fff;
+  cursor: pointer;
+}
+.save:hover {
+  background: #800e29;
 }
 
 button.save span {
