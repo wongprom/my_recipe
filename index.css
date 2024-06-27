@@ -202,3 +202,41 @@ button.save span {
   color: white;
   padding-right: 5px;
 }
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.info-box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box div p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.info-box div:last-of-type p {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tags .tag {
+  border: 1px solid gray;
+  border-radius: 2rem;
+  color: #4e9a5d;
+  padding: 0.3rem 1rem;
+}
+
+.tags .tag:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
