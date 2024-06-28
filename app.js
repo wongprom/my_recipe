@@ -19,16 +19,19 @@ const increaseElement = amountsElement.querySelector('.increase');
 const piecesElement = amountsElement.querySelector('.pieces');
 
 // Functions
-const decreaseAmount = () => {
-  const currentPieces = parseInt(piecesElement.textContent);
-  piecesElement.textContent = currentPieces - 1 + ' pieces';
+const changeAmount = (event) => {
+  if (event.target.closest('.decrease')) {
+    updateAmount(-1);
+  } else if (event.target.closest('.increase')) {
+    updateAmount(1);
+  }
 };
 
-const increaseAmount = () => {
+const updateAmount = (num) => {
   const currentPieces = parseInt(piecesElement.textContent);
-  piecesElement.textContent = currentPieces + 1 + ' pieces';
+  if (currentPieces <= 0) return;
+  piecesElement.textContent = currentPieces + num + ' pieces';
 };
 
 // Event Listners
-increaseElement.addEventListener('click', increaseAmount);
-decreaseElement.addEventListener('click', decreaseAmount);
+amountsElement.addEventListener('click', changeAmount);
