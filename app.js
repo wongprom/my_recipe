@@ -1,5 +1,6 @@
 let data = [];
 
+// Load init values
 window.addEventListener('DOMContentLoaded', async () => {
   console.log('JS is loaded');
   const response = await fetch('data.json');
@@ -8,7 +9,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 });
 
 const loadEvent = () => {
-  console.log(data.pieces);
   piecesElement.textContent = data.pieces + ' pieces';
 };
 
@@ -18,12 +18,17 @@ const decreaseElement = amountsElement.querySelector('.decrease');
 const increaseElement = amountsElement.querySelector('.increase');
 const piecesElement = amountsElement.querySelector('.pieces');
 
-decreaseElement.addEventListener('click', () => {
+// Functions
+const decreaseAmount = () => {
   const currentPieces = parseInt(piecesElement.textContent);
   piecesElement.textContent = currentPieces - 1 + ' pieces';
-});
+};
 
-increaseElement.addEventListener('click', () => {
+const increaseAmount = () => {
   const currentPieces = parseInt(piecesElement.textContent);
   piecesElement.textContent = currentPieces + 1 + ' pieces';
-});
+};
+
+// Event Listners
+increaseElement.addEventListener('click', increaseAmount);
+decreaseElement.addEventListener('click', decreaseAmount);
