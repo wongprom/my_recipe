@@ -167,7 +167,7 @@ address p a {
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 20;
-  font-size: 30;
+  font-size: 30px;
   color: #cdf1ea;
 }
 
@@ -244,8 +244,22 @@ button.save span {
 .amount {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
   border: 1px solid gray;
   border-radius: 0.5rem;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem;
+}
+
+.amount .decrease,
+.increase {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  border: 1px solid green;
+  padding: 1rem;
+  height: 0.1rem;
+  width: 0.1rem;
+  background-color: green;
+  border-radius: 50%;
 }
